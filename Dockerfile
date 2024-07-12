@@ -35,7 +35,7 @@ RUN ./autogen.sh && \
 EXPOSE 3493
 
 # Define entrypoint
-ENTRYPOINT ["upsd"]
+ENTRYPOINT ["/usr/local/ups/sbin/upsd"]
 
 # Default command
 CMD ["-u", "nut"]
