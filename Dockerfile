@@ -31,7 +31,7 @@ RUN ./autogen.sh && \
     make install && \
     ldconfig
 
-RUN mkdir /var/state/ups
+RUN mkdir -p /var/state/ups
 
 # Expose the necessary ports
 EXPOSE 3493
