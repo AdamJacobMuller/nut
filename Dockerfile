@@ -31,11 +31,10 @@ RUN ./autogen.sh && \
     make install && \
     ldconfig
 
+RUN mkdir /var/state/ups
+
 # Expose the necessary ports
 EXPOSE 3493
 
 # Define entrypoint
 ENTRYPOINT ["/usr/local/ups/sbin/upsd"]
-
-# Default command
-CMD ["-u", "nut"]
