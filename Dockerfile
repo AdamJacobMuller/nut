@@ -15,6 +15,7 @@ RUN apt-get update && \
     autoconf \
     automake \
     libtool \
+    snmp \
     && apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
